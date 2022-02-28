@@ -3,7 +3,9 @@ Demo app using UITableView with auto cell height.
 
 ## Functions
 - Custom table view cell
-- Auto calcuate cell height
+- Auto calcuate cell height / UITableView.automaticDimension
+- Custom calculate cell height
+- Show UITableView section title
 - Set attributedText at UILable
 - Button in UITableViewCell tap call back using closure.
 
