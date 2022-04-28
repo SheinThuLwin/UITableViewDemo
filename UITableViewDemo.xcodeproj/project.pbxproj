@@ -86,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97B5BD79281A4B6D00FD4D39 /* TableViiewCell */ = {
+			isa = PBXGroup;
+			children = (
+				97BCBFC927C4BE00000589A2 /* SingleLblCell.swift */,
+				97BCBFCA27C4BE00000589A2 /* SingleLblCell.xib */,
+				97BCBFCD27C4C141000589A2 /* SingleLblSingleBtnCell.swift */,
+				97BCBFCE27C4C141000589A2 /* SingleLblSingleBtnCell.xib */,
+			);
+			path = TableViiewCell;
+			sourceTree = "<group>";
+		};
 		97BCBF8C27C4BB80000589A2 = {
 			isa = PBXGroup;
 			children = (
@@ -109,14 +120,11 @@
 		97BCBF9727C4BB81000589A2 /* UITableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				97B5BD79281A4B6D00FD4D39 /* TableViiewCell */,
 				97BCBF9827C4BB81000589A2 /* AppDelegate.swift */,
 				97BCBF9A27C4BB81000589A2 /* SceneDelegate.swift */,
 				97BCBF9C27C4BB81000589A2 /* ViewController.swift */,
 				97BCBF9E27C4BB81000589A2 /* Main.storyboard */,
-				97BCBFC927C4BE00000589A2 /* SingleLblCell.swift */,
-				97BCBFCA27C4BE00000589A2 /* SingleLblCell.xib */,
-				97BCBFCD27C4C141000589A2 /* SingleLblSingleBtnCell.swift */,
-				97BCBFCE27C4C141000589A2 /* SingleLblSingleBtnCell.xib */,
 				97BCBFA127C4BB85000589A2 /* Assets.xcassets */,
 				97BCBFA327C4BB85000589A2 /* LaunchScreen.storyboard */,
 				97BCBFA627C4BB85000589A2 /* Info.plist */,
