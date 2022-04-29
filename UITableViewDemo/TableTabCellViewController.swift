@@ -36,6 +36,8 @@ class TableTabCellViewController: UIViewController {
         ImageCell.registerForCell(at: tbl)
         TabTableViewHeader.registerForHeaderFooter(at: tbl)
         
+        tbl.sectionHeaderTopPadding = 0
+        
         tbl.dataSource = self
         tbl.delegate = self
         
