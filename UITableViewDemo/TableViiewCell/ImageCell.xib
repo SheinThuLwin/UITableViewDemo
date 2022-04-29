@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="ImageCell" customModule="UITableViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OJ-qY-uhs">
+                        <rect key="frame" x="8" y="8" width="304" height="117"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-yb-3uw">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="117"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="D4B-yb-3uw" firstAttribute="top" secondItem="9OJ-qY-uhs" secondAttribute="top" id="Nax-rX-yed"/>
+                            <constraint firstAttribute="trailing" secondItem="D4B-yb-3uw" secondAttribute="trailing" id="ibr-Ko-4Mm"/>
+                            <constraint firstItem="D4B-yb-3uw" firstAttribute="leading" secondItem="9OJ-qY-uhs" secondAttribute="leading" id="kEX-Zy-fvz"/>
+                            <constraint firstAttribute="bottom" secondItem="D4B-yb-3uw" secondAttribute="bottom" id="lSp-6W-INy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9OJ-qY-uhs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="146-VU-KYY"/>
+                    <constraint firstItem="9OJ-qY-uhs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6Rp-uS-6NV"/>
+                    <constraint firstAttribute="trailing" secondItem="9OJ-qY-uhs" secondAttribute="trailing" constant="8" id="LKh-zL-mmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="9OJ-qY-uhs" secondAttribute="bottom" constant="8" id="k9u-Lw-Dgx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgV" destination="D4B-yb-3uw" id="1r9-RJ-eqX"/>
+                <outlet property="vwBase" destination="9OJ-qY-uhs" id="ugf-nq-VPC"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="77.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

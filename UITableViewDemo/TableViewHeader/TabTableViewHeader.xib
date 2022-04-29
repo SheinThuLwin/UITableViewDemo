@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TabTableViewHeader" customModule="UITableViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVA-Yh-Arg" userLabel="vwBG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                    <subviews>
+                        <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdV-3z-P9I">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <tabBarItem title="Feature" id="MlB-a8-dcx"/>
+                                <tabBarItem title="News" id="VhE-7d-dC5"/>
+                            </items>
+                        </tabBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AdV-3z-P9I" secondAttribute="bottom" id="4Sp-q0-n5G"/>
+                        <constraint firstItem="AdV-3z-P9I" firstAttribute="leading" secondItem="CVA-Yh-Arg" secondAttribute="leading" id="ETH-D4-iQM"/>
+                        <constraint firstAttribute="trailing" secondItem="AdV-3z-P9I" secondAttribute="trailing" id="kDL-Sr-eEd"/>
+                        <constraint firstItem="AdV-3z-P9I" firstAttribute="top" secondItem="CVA-Yh-Arg" secondAttribute="top" id="scJ-e4-lgV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="CVA-Yh-Arg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M6r-BZ-6BG"/>
+                <constraint firstItem="CVA-Yh-Arg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="POc-Bq-TU1"/>
+                <constraint firstItem="CVA-Yh-Arg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sZz-4W-hxX"/>
+                <constraint firstItem="CVA-Yh-Arg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="znK-Jf-J6q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tabBar" destination="AdV-3z-P9I" id="OpI-Ba-aPq"/>
+                <outlet property="vwBG" destination="CVA-Yh-Arg" id="g9z-Lh-oga"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
